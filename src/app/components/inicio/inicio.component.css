@@ -1,0 +1,11 @@
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;        /* for single line flex container */
+    align-content: center;      /* for multi-line flex container */
+    margin-top: 50px;
+}
+
+div.card-body{
+    min-width: 800px;
+}

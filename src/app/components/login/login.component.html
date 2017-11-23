@@ -1,0 +1,50 @@
+<div class="main-img">
+  <div style="text-align:left">
+    <h3 class="jumbotron">
+      Welcome to My App!
+    </h3>
+  </div>
+  <div style="padding-top:0px;">
+    <div class="container">
+      <div class="login-label col-4">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Endereço de email</label>
+          <input type="email" id="exampleInputEmail1" class="form-control" [(ngModel)]="user.email" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" id="exampleInputPassword1" class="form-control" [(ngModel)]="user.password" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input"> Mantenha-me conectado
+          </label>
+        </div>
+        <button type="submit" class="btn btn-outline-primary btn-lg" (click)="login()">Entrar</button>
+        <button type="submit" class="btn btn-outline-warning btn-lg">Cadastre-se</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="copyright">
+            © 2017, ZCT Automação, All rights reserved
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="design">
+            <a href="#">Franchisee </a> |
+            <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

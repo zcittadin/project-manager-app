@@ -1,0 +1,9 @@
+.main-img {
+    background-image: url("/assets/image/molecular.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   }
+
+   .login-label {
+       color: black;
+   }
