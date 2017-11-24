@@ -5,12 +5,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 
-import { PanelModule } from 'primeng/primeng';
-import { InputTextModule } from 'primeng/primeng';
-import { PasswordModule } from 'primeng/primeng';
-import { ButtonModule } from 'primeng/primeng';
-import { CheckboxModule } from 'primeng/primeng';
-import { SidebarModule } from 'primeng/primeng';
+import {
+  PanelModule, InputTextModule, PasswordModule,
+  ButtonModule, CheckboxModule, SidebarModule,
+  MessagesModule, MessageModule
+} from 'primeng/primeng';
+
 
 import { AuthGuard } from './auth/auth-guard.service';
 import { AuthService } from './auth/auth.service';
