@@ -2,8 +2,61 @@
     background-image: url("/assets/image/molecular.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-   }
+    margin-top: 50px;
+}
 
-   .login-label {
-       color: black;
-   }
+.login-label {
+    color: black;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+div.card-body {
+    min-width: 400px;
+}
+
+h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+header{
+    background-color:#b2ebf2;
+    min-height: 80px;
+}
+
+.card {
+    box-shadow: 8px 8px 2px rgb(16, 98, 110);
+}
+
+#avatar {
+
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('../../../assets/image/avatar.jpg');
+    
+    /* make a square container */
+    width: 90px;
+    height: 90px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: center;
+
+    box-shadow: 4px 4px 2px rgb(16, 98, 110);
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}

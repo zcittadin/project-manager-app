@@ -1,0 +1,17 @@
+header{
+    background-color:#b2ebf2;
+    min-height: 80px;
+}
+
+h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
+}

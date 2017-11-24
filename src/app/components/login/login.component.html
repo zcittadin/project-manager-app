@@ -1,50 +1,48 @@
-<div class="main-img">
-  <div style="text-align:left">
-    <h3 class="jumbotron">
-      Welcome to My App!
-    </h3>
-  </div>
-  <div style="padding-top:0px;">
-    <div class="container">
-      <div class="login-label col-4">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Endereço de email</label>
-          <input type="email" id="exampleInputEmail1" class="form-control" [(ngModel)]="user.email" aria-describedby="emailHelp" placeholder="Email">
+<header class="ui-g12 ui-md-12">
+    <h2>My Project Manager</h2>
+</header>
+<div class="center-content">
+    <div class="card">
+        <div id="avatar"></div>
+        <div class="card-body">
+            <form class="ui-g-12" #loginForm="ngForm">
+                <div class="form-group">
+                    <label for="email">Endereço de email</label>
+                    <input type="email" id="email" name="email" class="form-control" [(ngModel)]="user.email" required placeholder="Email" #email="ngModel">
+                    <div [hidden]="email.valid || email.pristine" class="alert alert-warning">Preencha corretamente o email</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" [(ngModel)]="user.password" required placeholder="Password"
+                        #password="ngModel">
+                    <div [hidden]="password.valid || password.pristine" class="alert alert-warning">Preencha corretamente o password</div>
+                </div>
+                <div class="ui-g-12">
+                    <p-checkbox binary="true"></p-checkbox>Mantenha-me conectado
+                </div>
+                <button type="submit" [disabled]="!loginForm.form.valid" class="btn btn-outline-primary btn-lg" (click)="login()">Entrar</button>
+                <button type="submit" class="btn btn-outline-success btn-lg" (click)="cadastrarUsuario()">Cadastre-se</button>
+            </form>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" id="exampleInputPassword1" class="form-control" [(ngModel)]="user.password" placeholder="Password">
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="checkbox" class="form-check-input"> Mantenha-me conectado
-          </label>
-        </div>
-        <button type="submit" class="btn btn-outline-primary btn-lg" (click)="login()">Entrar</button>
-        <button type="submit" class="btn btn-outline-warning btn-lg">Cadastre-se</button>
-      </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="copyright">
-            © 2017, ZCT Automação, All rights reserved
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="design">
-            <a href="#">Franchisee </a> |
-            <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
+<!--br><br><br><br><br>
+<div class="footer-bottom">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="copyright">
+                    © 2017, ZCT Automação, All rights reserved
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="design">
+                    <a href="#">Franchisee </a> |
+                    <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div-->

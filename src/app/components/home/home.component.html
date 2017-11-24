@@ -1,23 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#b2ebf2;">
+<p-sidebar [(visible)]="display">
+  <app-sidebar></app-sidebar>
+</p-sidebar>
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/home">Início
-          <span class="sr-only">(current)</span>
+        <a class="nav-link link-hovered" (click)="display = true">
+          <i class="fa fa-bars fa-2x text-primary"></i>
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Agendamento</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Acompanhamento</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" (click)="logout()">Logout</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="logout()">
+        <i class="fa fa-sign-out"></i>
+        Logout
+      </button>
     </form>
   </div>
 </nav>
-<div class=".center-content">
+<br>
+<div class="container-fluid">
   <app-inicio></app-inicio>
 </div>

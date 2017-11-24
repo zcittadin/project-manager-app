@@ -1,7 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RequestOptions, HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { FormsModule } from '@angular/forms';
+
+import { PanelModule } from 'primeng/primeng';
+import { InputTextModule } from 'primeng/primeng';
+import { PasswordModule } from 'primeng/primeng';
+import { ButtonModule } from 'primeng/primeng';
+import { CheckboxModule } from 'primeng/primeng';
+import { SidebarModule } from 'primeng/primeng';
 
 import { AuthGuard } from './auth/auth-guard.service';
 import { AuthService } from './auth/auth.service';
@@ -15,6 +24,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { CadastroUsuarioComponent } from './components/cadastro-usuario/cadastro-usuario.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 @NgModule({
@@ -22,12 +33,21 @@ import { InicioComponent } from './components/inicio/inicio.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    InicioComponent
+    InicioComponent,
+    CadastroUsuarioComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
+    BrowserAnimationsModule,
+    PanelModule,
+    InputTextModule,
+    PasswordModule,
+    ButtonModule,
+    CheckboxModule,
+    SidebarModule,
     AppRoutingModule
   ],
   providers: [

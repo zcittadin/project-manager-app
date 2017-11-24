@@ -1,0 +1,17 @@
+nav{
+    background-color:#b2ebf2;
+}
+
+.link-hovered {
+     cursor: pointer;
+}
+
+a h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+header{
+    background-color:#b2ebf2;
+    min-height: 80px;
+}

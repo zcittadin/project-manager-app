@@ -34,4 +34,8 @@ export class LoginComponent implements OnInit {
       });
   }
 
+  cadastrarUsuario() {
+    this.router.navigate(['/cad_user']);
+  }
+
 }
