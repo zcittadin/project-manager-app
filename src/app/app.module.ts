@@ -2,15 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RequestOptions, HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { FormsModule } from '@angular/forms';
 
-import {
-  PanelModule, InputTextModule, PasswordModule,
-  ButtonModule, CheckboxModule, SidebarModule,
-  MessagesModule, MessageModule
-} from 'primeng/primeng';
-
+import { CheckboxModule, SidebarModule, ChartModule } from 'primeng/primeng';
 
 import { AuthGuard } from './auth/auth-guard.service';
 import { AuthService } from './auth/auth.service';
@@ -42,12 +36,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     HttpModule,
     FormsModule,
     BrowserAnimationsModule,
-    PanelModule,
-    InputTextModule,
-    PasswordModule,
-    ButtonModule,
     CheckboxModule,
     SidebarModule,
+    ChartModule,
     AppRoutingModule
   ],
   providers: [
